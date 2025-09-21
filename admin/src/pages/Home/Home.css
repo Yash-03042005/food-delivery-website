@@ -1,0 +1,21 @@
+.home-page {
+  margin: 40px 30px; /* same as orders-page */
+}
+
+/* ✅ Heading + Subheading */
+.home-header {
+  margin-bottom: 1rem;
+  text-align: left;
+}
+
+.home-header h2 {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 4px;
+}
+
+.home-header .subheading {
+  font-size: 0.95rem;
+  color: #666;
+}

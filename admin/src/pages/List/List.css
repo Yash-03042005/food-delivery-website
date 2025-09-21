@@ -1,0 +1,86 @@
+.list {
+  width: 70%;
+  margin: 40px 30px;
+  color: #6d6d6d;
+  font-size: 16px;
+}
+
+/* ✅ Header (copied structure from Orders but styled here) */
+.list-header {
+  margin-bottom: 1rem;
+  text-align: left;
+}
+
+.list-header h2 {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 4px;
+}
+
+.list-header .subheading {
+  font-size: 0.95rem;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.list-table {
+  width: 100%;
+}
+
+.list-table-format {
+  display: grid;
+  grid-template-columns: 0.6fr 2fr 1fr 1fr 1fr 1fr; /* 6 columns */
+  align-items: center;
+  gap: 20px;
+  padding: 12px 15px;
+  border: 1px solid #cacaca;
+  font-size: 14px;
+}
+
+.list-table-format.title {
+  background-color: #f9f9f9;
+  font-weight: 600;
+}
+
+.list-table-format img {
+  width: 60px;
+  border-radius: 5px;
+  margin-right: 15px; /* spacing between image and name */
+}
+
+.food-name {
+  margin-left: 5px; /* extra space after image */
+}
+
+/* ✅ Buttons styling (lighter colors) */
+.edit-btn,
+.delete-btn {
+  padding: 6px 14px;
+  border: none;
+  border-radius: 6px;
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.edit-btn {
+  background-color: #e3f2fd; /* light blue */
+  color: #1976d2;
+}
+
+.edit-btn:hover {
+  background-color: #bbdefb;
+  transform: scale(1.05);
+}
+
+.delete-btn {
+  background-color: #ffebee; /* light red */
+  color: #d32f2f;
+}
+
+.delete-btn:hover {
+  background-color: #ffcdd2;
+  transform: scale(1.05);
+}

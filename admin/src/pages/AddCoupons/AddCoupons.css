@@ -1,0 +1,128 @@
+.add-coupon {
+  width: 50%;
+  margin: 40px 30px;
+  margin-left: 50px;
+  color: #444;
+  font-size: 15px;
+}
+
+/* ✅ Heading + Subheading (copied style from Orders.css) */
+.add-coupon-header {
+  margin-bottom: 1rem;
+  text-align: left;
+}
+
+.add-coupon-header h2 {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 4px;
+}
+
+.add-coupon-header .subheading {
+  font-size: 0.95rem;
+  color: #666;
+}
+
+.add-coupon form {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  background: #fff;
+  padding: 25px 30px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.add-coupon-field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  width: 100%;
+}
+
+.add-coupon-field p {
+  font-weight: 600;
+  font-size: 14px;
+  margin-bottom: 3px;
+  color: #333;
+}
+
+.add-coupon-field input {
+  padding: 12px 14px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+  outline: none;
+  transition: border 0.2s ease;
+  width: 100%; /* full width */
+  box-sizing: border-box;
+}
+
+.add-coupon-field input:focus {
+  border-color: #ff6b6b;
+}
+
+.add-coupon-btn {
+  max-width: 140px;
+  padding: 12px;
+  border: none;
+  border-radius: 6px;
+  background-color: #ff6b6b;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.add-coupon-btn:hover {
+  background-color: #e05252;
+}
+
+/* ✅ Responsive Design */
+@media (max-width: 1024px) {
+  .add-coupon {
+    width: 70%;
+    margin-left: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .add-coupon {
+    width: 90%;
+    margin: 30px auto; /* center on mobile */
+  }
+
+  .add-coupon form {
+    padding: 20px;
+  }
+
+  .add-coupon-btn {
+    width: 100%;
+    max-width: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .add-coupon {
+    width: 100%;
+    margin: 20px auto;
+    padding: 0 10px; /* little padding on very small screens */
+  }
+
+  .add-coupon form {
+    gap: 20px;
+    padding: 15px;
+  }
+
+  .add-coupon-header h2 {
+    font-size: 18px;
+    text-align: center;
+  }
+
+  .add-coupon-header .subheading {
+    text-align: center;
+    font-size: 0.85rem;
+  }
+}

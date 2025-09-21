@@ -1,0 +1,121 @@
+.contact-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    margin: 40px 20px;
+}
+
+.contact-page h1 {
+    font-size: max(2.5vw, 28px);
+    color: #262626;
+    font-weight: 600;
+}
+
+.contact-page-text {
+    max-width: 60%;
+    text-align: center;
+    color: #808080;
+    font-size: 1vw;
+}
+
+.contact-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 50px;
+    width: 100%;
+    max-width: 1200px;
+    margin-top: 30px;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    flex: 1;
+}
+
+.contact-form input,
+.contact-form select,
+.contact-form textarea {
+    padding: 12px 15px;
+    border-radius: 12px;
+    border: 1px solid #ccc;
+    font-size: 1vw;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+.contact-form input:focus,
+.contact-form select:focus,
+.contact-form textarea:focus {
+    border-color: tomato;
+}
+
+.contact-form textarea {
+    resize: none;
+    height: 150px;
+}
+
+.contact-form button {
+    border: none;
+    background-color: tomato;
+    color: white;
+    padding: 12px 25px;
+    font-size: 1vw;
+    font-weight: 500;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    width: fit-content;
+}
+
+.contact-form button:hover {
+    background-color: #ff6347cc;
+}
+
+.contact-info {
+    flex: 0.5;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.contact-info h2 {
+    font-size: 1.5vw;
+    font-weight: 500;
+    color: #262626;
+}
+
+.contact-info-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-size: 1vw;
+    color: #676767;
+}
+
+.contact-info-item img {
+    width: 30px;
+}
+
+@media (max-width: 1050px) {
+    .contact-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .contact-page-text {
+        max-width: 90%;
+        font-size: 14px;
+    }
+    .contact-info-item {
+        font-size: 14px;
+    }
+    .contact-form input,
+    .contact-form select,
+    .contact-form textarea,
+    .contact-form button {
+        font-size: 14px;
+    }
+}

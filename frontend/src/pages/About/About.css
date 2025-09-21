@@ -1,0 +1,144 @@
+.about-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  margin: 40px 20px;
+}
+
+.about-page h1 {
+  font-size: max(2.5vw, 28px);
+  color: #262626;
+  font-weight: 600;
+}
+
+.about-intro {
+  max-width: 60%;
+  text-align: center;
+  color: #808080;
+  font-size: 1vw;
+}
+
+.highlight {
+  color: tomato;
+  font-weight: 600;
+}
+
+.about-container {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  width: 100%;
+  max-width: 1200px;
+  margin-top: 30px;
+}
+
+/* About Sections (Story & Mission) */
+.about-section {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.about-section.reverse {
+  flex-direction: row-reverse;
+}
+
+.about-section img {
+  width: 10%;
+  border-radius: 15px;
+  object-fit: cover;
+}
+
+.about-text-card {
+  padding: 25px;
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.about-text-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.12);
+}
+
+.about-text-card h2 {
+  font-size: 1.5vw;
+  font-weight: 600;
+  color: #262626;
+  margin-bottom: 10px;
+}
+
+.about-text-card p {
+  font-size: 1vw;
+  color: #676767;
+  line-height: 1.6;
+}
+
+/* Why Choose Us Section */
+.about-values {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.values-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 25px;
+  margin-top: 20px;
+}
+
+.value-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  border-radius: 15px;
+  background-color: #fff;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.value-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.12);
+}
+
+.value-card img {
+  width: 50px;
+  margin-bottom: 10px;
+}
+
+.value-card h3 {
+  font-weight: 600;
+  color: #262626;
+  margin-bottom: 5px;
+}
+
+.value-card p {
+  font-size: 0.9rem;
+  color: #676767;
+}
+
+@media (max-width: 1050px) {
+  .about-section, .about-section.reverse {
+    flex-direction: column;
+    align-items: center;
+  }
+  .about-section img {
+    width: 100%;
+  }
+  .about-intro {
+    max-width: 90%;
+    font-size: 14px;
+  }
+  .about-text-card p, .value-card p {
+    font-size: 14px;
+  }
+  .about-text-card h2, .value-card h3 {
+    font-size: 16px;
+  }
+}

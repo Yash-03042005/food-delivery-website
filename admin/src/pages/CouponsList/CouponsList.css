@@ -1,0 +1,74 @@
+.coupons-list {
+  width: 50%;                 /* ✅ same as Food List for consistency */
+  margin: 40px 30px;           /* ✅ aligned with other admin pages */
+  color: #6d6d6d;
+  font-size: 16px;
+}
+
+.coupons-table {
+  width: 100%;
+}
+
+.coupons-table-format {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr; /* ✅ 4 columns */
+  align-items: center;
+  gap: 20px;
+  padding: 12px 15px;
+  border: 1px solid #cacaca;
+  font-size: 14px;
+}
+
+.coupons-table-format.title {
+  background-color: #f9f9f9;
+  font-weight: 600;
+}
+
+/* ✅ Title & Subheading */
+.coupons-title {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 5px;
+  color: #262626;
+}
+
+.coupons-subtitle {
+  font-size: 16px;
+  color: #6d6d6d;
+  margin-bottom: 20px;
+}
+
+/* ✅ Delete Button Styling */
+.coupon-delete-btn {
+  padding: 6px 14px;
+  border: none;
+  border-radius: 6px;
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+  background-color: #ffebee; /* light red */
+  color: #d32f2f;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.coupon-delete-btn:hover {
+  background-color: #ffcdd2;
+  transform: scale(1.05);
+}
+
+/* ✅ Responsive */
+@media (max-width: 768px) {
+  .coupons-list {
+    width: 90%;
+    margin: 20px auto;
+  }
+
+  .coupons-table-format {
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
+
+  .coupons-table-format.title {
+    display: none; /* hide header on small screens */
+  }
+}
