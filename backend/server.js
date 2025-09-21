@@ -18,7 +18,7 @@ const port =process.env.PORT || 4002;
 //middleware
 app.use(express.json()) 
 app.use(cors({
-    origin: ["http://localhost:5173","http://localhost:5174","https://food-del-frontend-ooso.onrender.com","https://food-del-admin-xdc4.onrender.com"], // ✅ Set frontend origin
+    origin: ["http://localhost:5173","http://localhost:5174","https://food-delivery-website-frontend-fn32.onrender.com","https://food-delivery-website-admin-y7ck.onrender.com"], // ✅ Set frontend origin
     credentials: true // ✅ Allow credentials (cookies)
 }));
 app.use(cookieParser());
